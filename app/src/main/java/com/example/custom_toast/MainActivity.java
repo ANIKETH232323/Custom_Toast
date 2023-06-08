@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast_Custom.ImgToast(MainActivity.this,"hello",R.drawable.git, Toast_Custom.LENGTH_LONG,R.color.black).show();
+                Toast_Custom.ImgToast(MainActivity.this,"hello",R.drawable.git,
+                        Toast_Custom.LENGTH_LONG,R.drawable.back).show();
             }
         });
 

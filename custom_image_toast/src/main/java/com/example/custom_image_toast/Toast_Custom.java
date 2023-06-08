@@ -3,7 +3,6 @@ package com.example.custom_image_toast;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -12,7 +11,7 @@ import android.widget.Toast;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-public class toast extends Toast {
+public class Toast_Custom extends Toast {
 
     /**
      * Construct an empty Toast object.  You must call {@link #setView} before you
@@ -21,7 +20,7 @@ public class toast extends Toast {
      * @param context The context to use.  Usually your {@link Application}
      *                or {@link Activity} object.
      */
-    public toast(Context context) {
+    public Toast_Custom(Context context) {
         super(context);
     }
 

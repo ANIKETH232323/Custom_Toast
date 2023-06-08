@@ -6,9 +6,8 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-import com.example.custom_image_toast.toast;
+import com.example.custom_image_toast.Toast_Custom;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toast.ImgToast(MainActivity.this,"hello",R.drawable.git,toast.LENGTH_LONG,R.color.black).show();
+                Toast_Custom.ImgToast(MainActivity.this,"hello",R.drawable.git, Toast_Custom.LENGTH_LONG,R.color.black).show();
             }
         });
 

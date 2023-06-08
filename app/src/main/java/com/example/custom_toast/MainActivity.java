@@ -18,13 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button button = findViewById(R.id.button);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast_Custom.ImgToast(MainActivity.this,"hello",R.drawable.git,
-                        Toast_Custom.LENGTH_LONG,R.drawable.back).show();
-            }
-        });
+        button.setOnClickListener(v -> Toast_Custom.ImgToast(MainActivity.this,"hello",R.drawable.git,
+                Toast_Custom.LENGTH_LONG,R.drawable.back).show());
 
 
     }

@@ -1,5 +1,6 @@
 package com.example.custom_image_toast;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
@@ -27,7 +28,7 @@ public class Toast_Custom extends Toast {
         Toast toast = new Toast(context);
         toast.setDuration(duration);
 
-        View layout = LayoutInflater.from(context).inflate(R.layout.custom_toast,null,false);
+        @SuppressLint("InflateParams") View layout = LayoutInflater.from(context).inflate(R.layout.custom_toast,null,false);
         ConstraintLayout constraintLayout =layout.findViewById(R.id.toast_layout);
 
         TextView textView =layout.findViewById(R.id.textView);
